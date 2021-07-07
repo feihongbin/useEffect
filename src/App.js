@@ -1,37 +1,27 @@
 import "./App.css";
 import React, { useState } from "react";
-import FunctionDemo from "./components/FunctionDemo";
-import ClassDemo from "./components/ClassDemo";
-import Timer from "./components/Timer";
+import FunctionDifferentClass from './components/functionDifferentClass'
+import LayoutEffectDifferentEffect from './components/layoutDifferentEffect'
+import Timer from './components/Timer'
+import TimerClear from './components/TimerClear'
+import OutDefine from "./components/outDefine";
+import LastValue from "./components/lastValue";
 const App = () => {
-  const [user, setUser] = useState("Dan");
   return (
-    <>
-      <div>
-        <label>
-          <b>Choose profile to view: </b>
-          <select value={user} onChange={(e) => setUser(e.target.value)}>
-            <option value="Dan">Dan</option>
-            <option value="Sophie">Sophie</option>
-            <option value="Sunil">Sunil</option>
-          </select>
-        </label>
-        <h1>Welcome to {user}’s profile!</h1>
-        <p>
-          <FunctionDemo user={user} />
-          <b> (function)</b>
-        </p>
-        <p>
-          <ClassDemo user={user} />
-          <b> (class)</b>
-        </p>
-        <p>Can you spot the difference in the behavior?</p>
-      </div>
-      <div>
-        <Timer />
-      </div>
-    </>
-  );
+    <div>
+      {/* <FunctionDifferentClass /> */}
+      <hr />
+      {/* <LayoutEffectDifferentEffect /> */}
+      <hr />
+      {/* <Timer /> */}
+      <hr />
+      {/* <TimerClear /> */}
+      <hr />
+      {/* <OutDefine /> */}
+      <hr />
+      {/* <LastValue /> */}
+    </div>
+  )
 };
 
 export default App;

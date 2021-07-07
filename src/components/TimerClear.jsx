@@ -8,6 +8,7 @@ const Timer = () => {
       setCount(count + 1)
       // setCount(c => c + 1)
     }, 1000);
+    return () => { clearInterval(id); console.log(-count) }
   }, [count]);
 
   return <h1>{count}</h1>;
