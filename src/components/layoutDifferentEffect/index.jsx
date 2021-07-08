@@ -2,6 +2,16 @@ import React, { useState, useEffect, useLayoutEffect } from 'react'
 
 function Effect() {
     useEffect(() => {
+        // window.addEventListener('load', () => {
+        //     console.log('DOM LOADED');
+        // })
+
+        // window.onload = function () {
+        //     console.log('DOM LOADED useEffect');
+        // }
+        window.onload = function () {
+            console.log('DOM LOADED useLayoutEffect');
+        }
         console.log('useEffect 执行')
         return () => {
             console.log("useEffect 销毁")
