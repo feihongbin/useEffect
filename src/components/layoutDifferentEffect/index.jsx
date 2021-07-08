@@ -17,14 +17,12 @@ function Effect() {
             console.log("useEffect 销毁")
         }
     });
-
     useLayoutEffect(() => {
         console.log("useLayoutEffect 执行")
         return () => {
             console.log("useLayoutEffect 销毁")
         }
     })
-
     return <div>
         <h2>Effect</h2>
         {console.log("Effect 渲染")}

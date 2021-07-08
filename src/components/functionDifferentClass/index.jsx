@@ -8,14 +8,12 @@ const FunctionDifferentClass = () => {
         <>
             <div>
                 <label>
-                    <b>Choose profile to view: </b>
                     <select value={user} onChange={(e) => setUser(e.target.value)}>
-                        <option value="Dan">Dan</option>
-                        <option value="Sophie">Sophie</option>
-                        <option value="Sunil">Sunil</option>
+                        <option value="Dan">小明</option>
+                        <option value="Sophie">小红</option>
+                        <option value="Sunil">小华</option>
                     </select>
                 </label>
-                <h1>Welcome to {user}’s profile!</h1>
                 <p>
                     <FunctionDemo user={user} />
                     <b> (function)</b>s
@@ -24,7 +22,6 @@ const FunctionDifferentClass = () => {
                     <ClassDemo user={user} />
                     <b> (class)</b>
                 </p>
-                <p>Can you spot the difference in the behavior?</p>
             </div>
         </>
     );

@@ -14,11 +14,11 @@ const App = () => {
       {/* <FunctionDifferentClass /> */}
       <hr />
       {/* <LayoutEffectDifferentEffect /> */}
-      <Runtime />
+      {/* <Runtime /> */}
       <hr />
       {/* <Timer /> */}
       <hr />
-      {/* <TimerClear /> */}
+      <TimerClear />
       <hr />
       {/* <OutDefine /> */}
       <hr />
